@@ -16,8 +16,10 @@
     }
     
     .col-sm-4{
-    padding-top: 40px;
-        padding-bottom: 32px;
+    padding-top: 40px !important;
+    padding-bottom: 16px !important;
+    padding-right: 32px !important;
+    padding-left: 32px !important;
     }  
     
     .col-sm-4 {
@@ -60,10 +62,44 @@
         font-family: 'M300', Fallback, sans-serif !important;
     }
     
+    #about{
+        font-size: 18px; 
+        padding-top: 40px;
+        font-family: 'M300', Fallback, sans-serif !important;
+    }
+    
+    #logos{
+        width: 100%;
+    }
+    
+    #hyperlink{
+        color: white;
+        text-decoration: underline;
+    }
+    
+    #hyperlink:hover{
+        transition: all 300ms ease;
+        color: #eb5256;
+    }
+    
     @media only screen and (min-width: 600px) {
         #title{
-            padding-bottom: 40px; 
-            padding-top: 40px;
+            padding-bottom: 18px; 
+            padding-top: 60px;
+        }
+        
+        #about{
+            padding: 0px 160px 0px 160px;
+            font-size: 16px;
+        }
+        
+        #creds{
+            padding: 0px 160px 0px 160px;
+            font-size: 12px;
+        }
+        
+        #logos{
+            width: 500px;
         }
     }
     
@@ -84,7 +120,7 @@
     <div class="row" id="title" style="">
         <div class="col-lg-12 text-center">
             <h1 class="mt-5">KAUNO PASAKOS</h1>
-            <p class="lead">Atrask pasaką mieste. Spausk vieną iš šių ženklų - klausykis ir stebėk!</p>
+            <p class="lead">Atrask pasaką mieste. Radęs šiuos ženklus Kauno centre, spustelk, klausykis ir stebėk!</p>
         </div>
     </div> <!-- ROW -->
     
@@ -112,7 +148,7 @@
         
   </div>
         
-<div class="row">
+<div class="row" style="padding-bottom: 60px">
         
     <div class="col-sm-4" style="background-color:;">
         <a href="https://www.instagram.com/ar/233605628074358/?ch=MGM1OTkwZDY3YjA1NGQxOTY5YmQ1MmEyNjYzMTlmZTE%3D">
@@ -133,14 +169,46 @@
     </div>
 </div><!-- ROW --> 
 
-</div> <!-- WRAPPER -->   
+</div> <!-- WRAPPER -->           
+        
+<div class="row" id="about" style="background-color: #212529;">
+    
+    <div class="col-lg-12 text-center" style=" padding-top: 48px; padding-bottom: 26px; color: white;">
+            <a class="">"Kauno pasakos" - pačiame miesto centre stebuklingai atsiradusios pasakos apie Kauną ir jo gyventojus. Pasakas sukūrė ir atvaizdavo devyni Kauno menininkai ir kūrėjai, remdamiesi Juliaus Kaupo knyga "Daktaras Kripštukas pragare". Ši knyga - tai pasakų rinkinys, kurioje persipina filosofinės mintys, humoras, pasakų motyvai, išmintis ir amžinosios vertybės, joje atgyja Kauno paslaptys ir grožis. 
+                <br>
+            Projektas yra</a> <a id="hyperlink" href="https://magiccarpets.eu/">magiccarpets.eu</a> <a>ir</a> 
+        <a id="hyperlink" href="https://bienale.lt/2019/en/about-biennial/">kaunasbiennial</a> <a>dalis</a><br><br>
+        
+    </div>
+</div>
     
     
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <p class="lead">Kauno Pasakos 2020</p>
-        </div>
-    </div> <!-- ROW -->
+    <div class="col-lg-12 text-center" id="creds" style="padding-top: 32px">
+    <a>
+    Idėjos autoriai: Eglė Valadkevičiūtė, Inga Galvanauskaitė, Lukas Valiauga ir Justas Motuzas<br>
+    Pasakas į Instagram filtrus pavertė: Lukas Valiauga ir Justas Motuzas<br>
+    Projekto prodiuserės: Eglė Valadkevičiūtė ir Inga Galvanauskaitė<br>
+    Iliustratorė: Agnė Žiūkaitė<br><br>
+Kūrėjai: Jokūbas Bateika, Tadas Zaranka, Karolis Skiparis, Loreta Valantiejienė, Jolanta Vilija Galdikaitė, Ieva Trišauskaitė, Marius Šablevičius, Ugnė Makselytė, Vytautas Mikalauskas<br>
+        <br>
+Dėkojame: Algiui Kaupui, Daliai Kaupienei-Augūnienei, Gediminui Kasparavičiui, Virginijai Paplauskienei, Kauno Bielanei, ADGO Reklama    
+    </a>
+    </div>
+    
+    <div class="col-lg-12 text-center" style="padding-top: 32px">
+    <img id="logos" src="images/logos.png" style="">
+    </div>
+    
+    
+    
+    
+        
+
+        
+
+    
+    
+    
     
     
     </div>
@@ -148,6 +216,14 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+    <script>
+   $(document).ready(function(){
+    $('body').hide(0).delay(100).fadeIn(1000)
+});
+        
+    </script>
 
 </body>
 
